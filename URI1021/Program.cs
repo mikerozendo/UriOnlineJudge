@@ -2,7 +2,7 @@
 using System.Globalization;
 
 namespace TreinoUri
-{
+{ 
     class Program
     {
         static void Main(string[] args)
