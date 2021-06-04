@@ -21,8 +21,6 @@ namespace Treino
                 {
 
                     
-
-
                     if (controlador == primeiroValor)
                     {
                         Console.Write($"{i}");
