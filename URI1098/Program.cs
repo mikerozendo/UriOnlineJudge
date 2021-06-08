@@ -58,19 +58,6 @@ namespace Treino
                 }
 
 
-
-
-                /*
-                else if (i == 2)
-                {
-                    for (int k = 1; k <= 3; k++)
-                    {
-                        Convert.ToInt32(i);
-                        Console.WriteLine($"I={i} J={k + segundoValor.ToString("F1", CultureInfo.InvariantCulture)}");
-
-                    }
-                }
-                */
                 segundoValor += 0.2;
 
             }
