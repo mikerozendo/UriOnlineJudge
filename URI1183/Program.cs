@@ -1,0 +1,60 @@
+﻿using System;
+using System.Globalization;
+
+namespace UriOnlineJudge
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            double[,] matriz = new double[12, 12];
+
+
+            char validacao = char.Parse(Console.ReadLine());
+
+
+            double soma = 0;
+            int contador = 1;
+
+
+            //Lendo valores da matriz 
+            for (int i = 0; i < 12; i++)
+            {
+
+                for (int j = 0; j < 12; j++)
+                {
+                    matriz[i, j] = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                }
+
+            }
+
+
+            for (int k = 0; k < 11; k++)
+            {
+
+                for (int f = contador; f < 12; f++)
+                {
+                    soma += matriz[k, f];
+                }
+
+                contador++;
+            }
+
+
+            if (validacao == 'S')
+            {
+                Console.WriteLine(soma.ToString("F1", CultureInfo.InvariantCulture));
+            }
+
+
+            else if (validacao == 'M')
+            {
+                double media = soma / 66;
+                Console.WriteLine(media.ToString("F1", CultureInfo.InvariantCulture));
+            }
+
+
+        }
+    }
+}
